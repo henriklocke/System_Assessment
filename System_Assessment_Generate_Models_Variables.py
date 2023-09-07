@@ -4,23 +4,31 @@
 
 
 #FSA System Assessment
+
+generate_future = False
+generate_sealed_vfd = True
+generate_xadwf = False
+generate_bsf = False
+
+output_folder = r'J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\System_Assessment\Model_Generation'
+
+#For future models
 model_original = r"J:\SEWER_AREA_MODELS\FSA\01_MASTER_MODEL\MODEL\FSA_Base_2021pop.sqlite"
 year_original = 2021
 version = 103
-
 year_scenario_list = []
 year_scenario_list.append([2030,'2030_Network',['Ex']])
 year_scenario_list.append([2040,'2030_Network',['2050M','2050H']])
 year_scenario_list.append([2050,'2030_Network',['2050H']])
 year_scenario_list.append([2060,'2030_Network',['2050H','2100H']])
-
 population_sheet = r"J:\SEWER_AREA_MODELS\FSA\02_MODEL_COMPONENTS\04_DATA\01. POPULATION\FSA_Master_Population_File_Update14a15a.xlsx"
 population_tab = 'MPF Update 14a'
-all_scenarios = True
-dual_catchments = False
-use_all_files_in_folder = False
-output_folder = r'J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\System_Assessment\Model_Generation'
 
+#For sealed VFD
+vfd_all = True
+seal_all = True
 
-
-
+excluded_asset_names = []
+excluded_asset_names.append('Golden Ears SSO Tank')
+excluded_asset_names.append('NW CSO Tank Cleanout Pumps')
+excluded_asset_names.append('')

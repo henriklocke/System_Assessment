@@ -2,6 +2,22 @@
 
 ##Remember to insert r in front of all paths, e.g. r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\Calibration_2022\MODEL"
 
+#FSA System Assessment Sealed VFD
+model_area = "FSA"
+
+set_pipe_volume_0_when_max_pipe_flow_less_than_cms = 0.0001
+
+result_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\System_Assessment\System_Assessment_Mapping\FSA_Event_Maps\Import_Specs\Result_Specifications.csv"
+
+ps_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\System_Assessment\System_Assessment_Mapping\FSA_Event_Maps\Import_Specs\PS_Capacity_FSA.csv"
+summation_csv = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\System_Assessment\System_Assessment_Mapping\FSA_Event_Maps\Import_Specs\Summation.csv"
+summation_ps_csv = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\System_Assessment\System_Assessment_Mapping\FSA_Event_Maps\Import_Specs\Summation_PS.csv"
+
+outfall_csv = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\System_Assessment\System_Assessment_Mapping\FSA_Event_Maps\Import_Specs\Outfall_Summary.csv"
+
+map_folder = r"J:\SEWER_AREA_MODELS\FSA\04_ANALYSIS_WORK\Design\Event_Maps"
+result_folder = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\System_Assessment\FSA_System_Assessment_All_Sealed_VFD"
+
 
 # #FSA System Assessment
 # model_area = "FSA"
@@ -36,19 +52,19 @@
 # result_folder = r"\\prdsynfile01\LWS_Modelling\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\X_Times_BSF\Model_V93"
 
 
-#FSA MIKE+ review
-model_area = "FSA"
-set_pipe_volume_0_when_max_pipe_flow_less_than_cms = 0.0001
-result_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Result_Specifications.csv"
+# #FSA MIKE+ review
+# model_area = "FSA"
+# set_pipe_volume_0_when_max_pipe_flow_less_than_cms = 0.0001
+# result_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Result_Specifications.csv"
 
-ps_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\PS_Capacity_FSA.csv"
-summation_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Summation.csv"
-summation_ps_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Summation_PS.csv"
+# ps_specs_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\PS_Capacity_FSA.csv"
+# summation_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Summation.csv"
+# summation_ps_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Summation_PS.csv"
 
-outfall_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Outfall_Summary.csv"
+# outfall_csv = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps\Import_Specs\Outfall_Summary.csv"
 
-map_folder = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps"
-result_folder = r"J:\SEWER_AREA_MODELS\FSA\01_MASTER_MODEL\MODEL\FSA_Base_2021pop_m1d - Result Files"
+# map_folder = r"J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\MU_Classic_To_MIKE+_Sim_Compare\MIKEPLUS_2023p1_September_2023\SA_Maps"
+# result_folder = r"J:\SEWER_AREA_MODELS\FSA\01_MASTER_MODEL\MODEL\FSA_Base_2021pop_m1d - Result Files"
 
 
 
