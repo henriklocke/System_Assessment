@@ -4,18 +4,19 @@
 
 
 #FSA System Assessment
-
+model_area = 'FSA'
 generate_future = False
-generate_sealed_vfd = True
+generate_sealed_vfd = False
 generate_xadwf = False
-generate_bsf = False
+generate_bsf = True
 
 output_folder = r'J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\System_Assessment\Model_Generation'
+script_path = r"J:\TOOLS\Generate_WaterspillDischarge_C#\WaterspillDischarge.cs"
 
 #For future models
 model_original = r"J:\SEWER_AREA_MODELS\FSA\01_MASTER_MODEL\MODEL\FSA_Base_2021pop.sqlite"
 year_original = 2021
-version = 103
+version = 104
 year_scenario_list = []
 year_scenario_list.append([2030,'2030_Network',['Ex']])
 year_scenario_list.append([2040,'2030_Network',['2050M','2050H']])
@@ -32,3 +33,10 @@ excluded_asset_names = []
 excluded_asset_names.append('Golden Ears SSO Tank')
 excluded_asset_names.append('NW CSO Tank Cleanout Pumps')
 excluded_asset_names.append('')
+
+weir_turn_offs = []
+weir_turn_offs.append('NS4-SSO')
+
+#For BSF
+gwis = [11.2]
+
