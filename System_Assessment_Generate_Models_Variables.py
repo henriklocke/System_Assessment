@@ -6,9 +6,10 @@
 #FSA System Assessment
 model_area = 'FSA'
 generate_future = False
+generate_bsf = False
+generate_xadwf = True
 generate_sealed_vfd = False
-generate_xadwf = False
-generate_bsf = True
+
 
 output_folder = r'J:\SEWER_AREA_MODELS\FSA\03_SIMULATION_WORK\System_Assessment\Model_Generation'
 script_path = r"J:\TOOLS\Generate_WaterspillDischarge_C#\WaterspillDischarge.cs"
@@ -39,4 +40,7 @@ weir_turn_offs.append('NS4-SSO')
 
 #For BSF
 gwis = [11.2]
+
+#For X ADWF
+times_adwf_list = [3]
 
